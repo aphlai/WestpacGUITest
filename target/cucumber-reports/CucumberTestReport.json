@@ -1,0 +1,893 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: anthony0lai@gmail.com"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      },
+      {
+        "line": 3,
+        "value": "#Feature: Westpac Kiwisaver Calculator test"
+      }
+    ],
+    "line": 6,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Browse to KiwiSaver Calculator page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7827701600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I browse to KiwiSaver Calculator page",
+            "match": {
+              "location": "wpKiwiSaverCalcTestStepDefinition.browseKiwiSaverCalcPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8060804800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wpKiwiSaverCalcTestStepDefinition.beforeScenario()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Proper message box should be displayed for Current Age field",
+        "description": "",
+        "id": "kiwisaver-calculator-test;proper-message-box-should-be-displayed-for-current-age-field",
+        "after": [
+          {
+            "result": {
+              "duration": 74075000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wpKiwiSaverCalcTestStepDefinition.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 468633300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click infomation icon for CurrentAge field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CurrentAge",
+                  "offset": 28
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.clickInfoIcon(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33623500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Message is displayed for CurrentAge field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CurrentAge",
+                  "offset": 25
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.checkMsgDisplay(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 39324200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Message is displayed below input box for CurrentAge field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "below",
+                  "offset": 21
+                },
+                {
+                  "val": "CurrentAge",
+                  "offset": 41
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.checkMsgBoxPos(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@Major"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Browse to KiwiSaver Calculator page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7559260500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I browse to KiwiSaver Calculator page",
+            "match": {
+              "location": "wpKiwiSaverCalcTestStepDefinition.browseKiwiSaverCalcPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7019434500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wpKiwiSaverCalcTestStepDefinition.beforeScenario()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Projected balance can be calculated using different user inputs",
+        "description": "",
+        "id": "kiwisaver-calculator-test;projected-balance-can-be-calculated-using-different-user-inputs;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 68663400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wpKiwiSaverCalcTestStepDefinition.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 43390000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User inputs Current Age 30",
+            "match": {
+              "arguments": [
+                {
+                  "val": "30",
+                  "offset": 24
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputCurAge(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 479127900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User inputs employment status Employed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Employed",
+                  "offset": 30
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputEmpSatus(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85541100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User inputs Salary/Wage per year 82000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "82000",
+                  "offset": 33
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputAnnualSalary(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105200700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User inputs contirbution rate 4%",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4%",
+                  "offset": 30
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputContributionRate(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User inputs Current KiwiSaverBalance ",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 37
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputCurrentBalance(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User inputs voluntary contribution  with frequency ",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 35
+                },
+                {
+                  "val": "",
+                  "offset": 51
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputVolContribution(String,String)"
+            },
+            "matchedColumns": [
+              5,
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User inputs Risk Profile Defensive",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Defensive",
+                  "offset": 25
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputRiskProfile(String)"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User inputs Saving goal per year ",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 33
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputSavingGoal(String)"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24429200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "KiwiSaver projection result is available",
+            "match": {
+              "location": "wpKiwiSaverCalcTestStepDefinition.checkKiwiSaverResultReady()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Major"
+          },
+          {
+            "line": 5,
+            "name": "@KiwiSaverCalcTest"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Browse to KiwiSaver Calculator page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8022755400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I browse to KiwiSaver Calculator page",
+            "match": {
+              "location": "wpKiwiSaverCalcTestStepDefinition.browseKiwiSaverCalcPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6971258000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wpKiwiSaverCalcTestStepDefinition.beforeScenario()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Projected balance can be calculated using different user inputs",
+        "description": "",
+        "id": "kiwisaver-calculator-test;projected-balance-can-be-calculated-using-different-user-inputs;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 120229000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wpKiwiSaverCalcTestStepDefinition.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 60842500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User inputs Current Age 45",
+            "match": {
+              "arguments": [
+                {
+                  "val": "45",
+                  "offset": 24
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputCurAge(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 431288900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User inputs employment status Self-employed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Self-employed",
+                  "offset": 30
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputEmpSatus(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User inputs Salary/Wage per year ",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 33
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputAnnualSalary(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User inputs contirbution rate ",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 30
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputContributionRate(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84582600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User inputs Current KiwiSaverBalance 100000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100000",
+                  "offset": 37
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputCurrentBalance(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 267441400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User inputs voluntary contribution 90 with frequency Fortnightly",
+            "match": {
+              "arguments": [
+                {
+                  "val": "90",
+                  "offset": 35
+                },
+                {
+                  "val": "Fortnightly",
+                  "offset": 53
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputVolContribution(String,String)"
+            },
+            "matchedColumns": [
+              5,
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149125600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User inputs Risk Profile Conservative",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Conservative",
+                  "offset": 25
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputRiskProfile(String)"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104946500,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User inputs Saving goal per year 290000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "290000",
+                  "offset": 33
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputSavingGoal(String)"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37020800,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "KiwiSaver projection result is available",
+            "match": {
+              "location": "wpKiwiSaverCalcTestStepDefinition.checkKiwiSaverResultReady()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Major"
+          },
+          {
+            "line": 5,
+            "name": "@KiwiSaverCalcTest"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Browse to KiwiSaver Calculator page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7400835900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I browse to KiwiSaver Calculator page",
+            "match": {
+              "location": "wpKiwiSaverCalcTestStepDefinition.browseKiwiSaverCalcPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6846724000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wpKiwiSaverCalcTestStepDefinition.beforeScenario()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Projected balance can be calculated using different user inputs",
+        "description": "",
+        "id": "kiwisaver-calculator-test;projected-balance-can-be-calculated-using-different-user-inputs;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 88516900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wpKiwiSaverCalcTestStepDefinition.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 47021700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User inputs Current Age 55",
+            "match": {
+              "arguments": [
+                {
+                  "val": "55",
+                  "offset": 24
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputCurAge(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 551315300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User inputs employment status Not employed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Not employed",
+                  "offset": 30
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputEmpSatus(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User inputs Salary/Wage per year ",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 33
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputAnnualSalary(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User inputs contirbution rate ",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 30
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputContributionRate(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75030100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User inputs Current KiwiSaverBalance 140000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "140000",
+                  "offset": 37
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputCurrentBalance(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 239615100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User inputs voluntary contribution 10 with frequency Annually",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 35
+                },
+                {
+                  "val": "Annually",
+                  "offset": 53
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputVolContribution(String,String)"
+            },
+            "matchedColumns": [
+              5,
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89079600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User inputs Risk Profile Balanced",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Balanced",
+                  "offset": 25
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputRiskProfile(String)"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106614100,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User inputs Saving goal per year 200000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200000",
+                  "offset": 33
+                }
+              ],
+              "location": "wpKiwiSaverCalcTestStepDefinition.inputSavingGoal(String)"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42440500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "KiwiSaver projection result is available",
+            "match": {
+              "location": "wpKiwiSaverCalcTestStepDefinition.checkKiwiSaverResultReady()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Major"
+          },
+          {
+            "line": 5,
+            "name": "@KiwiSaverCalcTest"
+          }
+        ]
+      }
+    ],
+    "name": "KiwiSaver Calculator test",
+    "description": "",
+    "id": "kiwisaver-calculator-test",
+    "keyword": "Feature",
+    "uri": "KiwiSaverCalcTest.feature",
+    "tags": [
+      {
+        "line": 5,
+        "name": "@KiwiSaverCalcTest"
+      }
+    ]
+  }
+]
