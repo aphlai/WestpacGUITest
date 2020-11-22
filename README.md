@@ -1,4 +1,4 @@
-# Project Title
+# Westpac KiwiSaver Calculator GUI Automated TEST
 
 The project is for demonstrating technical understanding on GUI automation using WestPac KiwiSaver Calculator page
 
